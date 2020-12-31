@@ -35,9 +35,9 @@
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: sans-serif;">
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light font-weight-bold rounded text-uppercase" style="font-family: sans-serif;">
+<nav id=mainNav class="navbar sticky-top navbar-expand-lg navbar-light bg-light font-weight-bold rounded text-uppercase">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,8 @@
 </div>
 
 <div id="portfolio" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 font-weight-bold rounded text-uppercase">
+        Portfolio</h2>
 
     <div class="divider-custom divider-light">
         <div class="divider-custom-line" style="display: block;"></div>
@@ -121,7 +122,18 @@
 </div>
 
 <div id="contact" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 font-weight-bold rounded text-uppercase">
+        Contact Me</h2>
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line" style="display: block;"></div>
+        <div class="divider-custom-icon" style="font-size: 2rem;">
+            <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas"
+                 data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                      d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+            </svg><!-- <i class="fas fa-star"></i> Font Awesome fontawesome.com --></div>
+        <div class="divider-custom-line"></div>
+    </div>
 </div>
 <!-- https://dev.to/drsavvina/build-a-simple-working-contact-form-with-bootstrap-4-mcf-->
 <section class="resume-section">
@@ -174,7 +186,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top + 20
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
@@ -183,6 +195,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
 
 
 
