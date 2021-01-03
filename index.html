@@ -3,37 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    <meta name="description" content="Professional Portfolio">
+    <meta name="author" content="Deeptaanshu Kumar">
+    <link rel="icon" href="images/Deep_Favicon.png">
 
     <title>Deeptaanshu Kumar</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/product/">
-    <!-- Bootstrap core CSS -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Bootstrap Social CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.3.1/bootstrap-social.min.css"
-          integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
-          crossorigin="anonymous"/>
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+    <!-- Core CSS including Bootstrap -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-social.min.css" crossorigin="anonymous"/>
 </head>
+
 <body id=about style="font-family: sans-serif;">
 
+<!-- Top navbar -->
 <nav id=mainNav
      class="navbar sticky-top navbar-expand-lg navbar-dark font-weight-bold rounded text-uppercase"
      style="background-color:#05386b;">
@@ -57,35 +45,38 @@
     </div>
 </nav>
 
-<header class="masthead bg-light text-black p-md-0 flex-column mb-0 pb-0">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background: #2f4357;">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="text-align: center; min-height: 280px;">
-                <img src="/examples/images/slide1.png" alt="First Pic">
-            </div>
-            <div class="carousel-item" style="text-align: center; min-height: 280px;">
-                <img src="/examples/images/slide2.png" alt="Second Pic">
-            </div>
-            <div class="carousel-item" style="text-align: center; min-height: 280px;">
-                <img src="/examples/images/slide3.png" alt="Third Pic">
-            </div>
+<!-- Main picture carousel-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background: black; width: auto; margin: auto;">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="text-align: center;">
+            <img src="images/CMU_Banner.jpeg" alt="Carnegie Mellon University" style="width: 100%;height: auto;">
         </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="carousel-item" style="text-align: center;">
+            <img src="images/Capital_One.jpg" alt="Second Pic" style="width: 100%;margin: auto;">
+        </div>
+        <div class="carousel-item" style="text-align: center;">
+            <img src="images/FM_LI_Pic.jpeg" alt="Third Pic" style="width: 100%;margin: auto;">
+        </div>
     </div>
-</header>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" style="outline: black;
+    background-color: rgba(0, 0, 0, 0.3); border-radius: 5%; border: 1px solid black;">
+        <span class="carousel-control-prev-icon" style="color: black;"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next" style="outline: black;
+    background-color: rgba(0, 0, 0, 0.3); border-radius: 5%; border: 1px solid black;">
+        <span class="carousel-control-next-icon" style="color: black;"></span>
+    </a>
+</div>
+
+<!-- Portfolio section -->
 <div id="portfolio" class="bg-light text-light">&nbsp;</div>
 <header class="masthead bg-light text-black">
     <div class="d-flex align-items-center flex-column">
@@ -179,6 +170,8 @@
         </div>
     </div>
 </header>
+
+<!-- Contact Me section -->
 <div id="contact" class="text-secondary" style="background-color:#5cdb95">&nbsp;</div>
 <header class="masthead text-center" style="background-color:#5cdb95">
     <div class="container d-flex p-md-0 flex-column mb-0 pb-0">
@@ -239,53 +232,17 @@
     </div>
 </header>
 
+<!-- Footer section -->
 <div class="copyright py-4 text-center text-white" style="background-color:#05386b">
     <div class="container"><small>Copyright ©2020 Deeptaanshu Kumar</small></div>
 </div>
 </body>
 </html>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
-<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-
-<script>
-//https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-     }// End if
-  });
-});
-
-
-</script>
+<!-- JavaScript loaded at end -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS, then Fontawesome, and then custom JS scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/all.js"></script>
+<script src="js/smooth_scrolling.js"></script>
