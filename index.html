@@ -80,24 +80,27 @@
 <body>
 
 <header>
-  <div class="collapse bg-dark" id="navbarHeader">
+
+    <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
-        <div class=" py-4">
+        <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About Me</h4>
           <p class="text-muted">I am the VP of Data Engineering in The Arena Group's Enterprise Data & AI team and am working on streaming data platforms and AI/ML!</p>
         </div>
-        <!--        <div class="col-sm-4 offset-md-1 py-4">-->
-        <!--          <h4 class="text-white">Contact</h4>-->
-        <!--          <ul class="list-unstyled">-->
-        <!--            <li><a href="#" class="text-white">Follow on Twitter</a></li>-->
-        <!--            <li><a href="#" class="text-white">Like on Facebook</a></li>-->
-        <!--            <li><a href="#" class="text-white">Email me</a></li>-->
-        <!--          </ul>-->
-        <!--        </div>-->
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.deeptaanshu.com/" class="text-white">Home</a></li>
+            <li><a href="#portfolio" class="text-white">Portfolio</a></li>
+            <li><a href="#modalSignin" class="text-white">Contact Me</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+
+
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a href="https://www.deeptaanshu.com" class="navbar-brand d-flex align-items-center">
@@ -110,7 +113,7 @@
   </div>
 </header>
 
-<main>
+<main class="overflow-scroll">
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -121,16 +124,16 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
-        <img class="bd-placeholder-img" width="100%" height="50%" src="images/Professional.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="images/Professional.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
       </div>
       <div class="carousel-item">
         <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
-        <img class="bd-placeholder-img" width="100%" height="50%" src="images/College.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="images/College.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
       </div>
       <div class="carousel-item">
         <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
-        <img class="bd-placeholder-img" width="100%" height="80%" src="images/Hobbies.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="images/Hobbies.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -143,221 +146,192 @@
     </button>
   </div>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-0 bg-light" id="portfolio">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+      <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
+        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+        <h1 class="fw-bold mb-0 fs-2">Portfolio</h1>
+        <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+
+
+
+
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/LI_Logo.svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://www.linkedin.com/in/deeptaanshu" class="btn btn-primary">LinkedIn</a>
+                  <small class="text-muted">3 mins</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/GoogleScholar_Logo.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">3 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/GitHub_Logo.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">5 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/Quora_Logo.webp" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/Medium_Logo.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">7 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/AngelList_Logo.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title><rect width="100%" height="100%" fill="#55595c"/></img>
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">3 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--  <div class="album py-5 bg-dark">-->
+  <!--    <div class="container">-->
+
+  <div class="modal modal-signin position-static d-block bg-dark py-5" tabindex="-1"  id="modalSignin">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-3 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
+          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+          <h1 class="fw-bold mb-0 fs-2">Contact Me</h1>
+          <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="" action="https://formspree.io/f/mqkgggna" method="POST">
+            <div class="form-floating mb-3">
+              <input type="input" class="form-control rounded-3" id="floatingInputName" placeholder="Full Name" required>
+              <label for="floatingInputName">Full Name</label>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInputEmail" placeholder="name@example.com" required>
+              <label for="floatingInputEmail">Email Address</label>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="form-outline mb-3">
+              <textarea type="text" class="form-control rounded-3" placeholder="Message" rows="7" required></textarea>
+              <!--                  <label class="form-label">Message</label>-->
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Submit</button>
+            <!--          <small class="text-muted">I will get back to you soon</small>-->
+          </form>
         </div>
       </div>
     </div>
   </div>
 
-<!--  <div class="album py-5 bg-dark">-->
-<!--    <div class="container">-->
+  <!--      <section class="resume-section mt-0 pt-0">-->
+  <!--            <form class="contact-form col-md-5 p-lg-5 mx-auto mb-3 bg-light text-dark"-->
+  <!--                  action="https://formspree.io/f/mqkgggna"-->
+  <!--                  method="POST">-->
+  <!--                <p>-->
+  <!--                    Please leave your message below and I will get back to you!-->
+  <!--                </p>-->
+  <!--                <div >-->
+  <!--                    <input type="name" class="form-control" placeholder="Name" name="name" required/>-->
+  <!--                </div>-->
+  <!--                <div >-->
+  <!--                    <input type="email" class="form-control" placeholder="Email" name="name" required/>-->
+  <!--                </div>-->
+  <!--                <div >-->
+  <!--                            <textarea class="form-control" type="text" placeholder="Message" rows="7" name="name"-->
+  <!--                                      required></textarea>-->
+  <!--                </div>-->
+  <!--                <div class="form-group row justify-content-center">-->
+  <!--                    <button type="submit" class="btn btn-submit btn-info mx-3">-->
+  <!--                        Submit-->
+  <!--                    </button>-->
+  <!--                </div>-->
+  <!--            </form>-->
+  <!--        </section>-->
 
-      <div class="modal modal-signin position-static d-block bg-dark py-5" tabindex="-1"  id="modalSignin">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content rounded-3 shadow">
-            <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
-              <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
-              <h1 class="fw-bold mb-0 fs-2">Contact Me</h1>
-              <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-            </div>
-
-            <div class="modal-body p-5 pt-0">
-              <form class="" action="https://formspree.io/f/mqkgggna" method="POST">
-                <div class="form-floating mb-3">
-                  <input type="input" class="form-control rounded-3" id="floatingInputName" placeholder="Full Name" required>
-                  <label for="floatingInputName">Full Name</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-3" id="floatingInputEmail" placeholder="name@example.com" required>
-                  <label for="floatingInputEmail">Email Address</label>
-                </div>
-                <div class="form-outline mb-3">
-                  <textarea type="text" class="form-control rounded-3" placeholder="Message" rows="7" required></textarea>
-<!--                  <label class="form-label">Message</label>-->
-                </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Submit</button>
-                <!--          <small class="text-muted">I will get back to you soon</small>-->
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--      <section class="resume-section mt-0 pt-0">-->
-      <!--            <form class="contact-form col-md-5 p-lg-5 mx-auto mb-3 bg-light text-dark"-->
-      <!--                  action="https://formspree.io/f/mqkgggna"-->
-      <!--                  method="POST">-->
-      <!--                <p>-->
-      <!--                    Please leave your message below and I will get back to you!-->
-      <!--                </p>-->
-      <!--                <div >-->
-      <!--                    <input type="name" class="form-control" placeholder="Name" name="name" required/>-->
-      <!--                </div>-->
-      <!--                <div >-->
-      <!--                    <input type="email" class="form-control" placeholder="Email" name="name" required/>-->
-      <!--                </div>-->
-      <!--                <div >-->
-      <!--                            <textarea class="form-control" type="text" placeholder="Message" rows="7" name="name"-->
-      <!--                                      required></textarea>-->
-      <!--                </div>-->
-      <!--                <div class="form-group row justify-content-center">-->
-      <!--                    <button type="submit" class="btn btn-submit btn-info mx-3">-->
-      <!--                        Submit-->
-      <!--                    </button>-->
-      <!--                </div>-->
-      <!--            </form>-->
-      <!--        </section>-->
-
-<!--    </div>-->
-<!--  </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
 
 </main>
 
@@ -366,8 +340,8 @@
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Copyright ©2023 Deeptaanshu Kumar</p>
-<!--    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>-->
+    <p class="mb-1">Copyright ©2020 Deeptaanshu Kumar</p>
+    <!--    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>-->
   </div>
 </footer>
 
