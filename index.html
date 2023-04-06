@@ -1,301 +1,383 @@
 <!doctype html>
-<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Professional Portfolio Website">
-    <meta name="author" content="Deeptaanshu Kumar">
-    <link rel="icon" href="images/Deep_Favicon.png">
-    <title>Deeptaanshu Kumar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Album example · Bootstrap v5.2</title>
 
-<!--    https://www.quicksprout.com/open-graph-tags/ - Open Graph Tags-->
-    <meta property="og:title" content="Deeptaanshu Kumar"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.deeptaanshu.com"/>
-    <meta property="og:description" content="Welcome to my website! Please take a look at my work and feel free to contact me!"/>
-    <meta property="og:image" content="images/Professional_OG.png"/>
-    <meta property="og:image:secure_url" content="images/Professional_OG.png"/>
-<!--    <meta property="og:image:width" content="150"/>-->
-<!--    <meta property="og:image:height" content="150"/>-->
-<!--    <meta name="site_name" property="og:site_name" content="Deeptaanshu Kumar"/>-->
+  <link rel="canonical" href="https://getbootstrap.comhttps://getbootstrap.com/docs/5.2/examples/album/">
 
-<!--    https://www.quicksprout.com/open-graph-tags/ - Twitter Cards-->
-<!--    <meta name="twitter:card" content="summary"/>-->
-<!--    <meta name="twitter:url" content="https://www.deeptaanshu.com"/>-->
-<!--    <meta name="twitter:title" content="Deeptaanshu Kumar"/>-->
-<!--    <meta name="twitter:description"-->
-<!--          content="Welcome to my website! Please take a look at my work and feel free to contact me!"/>-->
-<!--    <meta property="twitter:image" content="images/Professional_OG.png"/>-->
-<!--    <meta property="twitter:image:secure_url" content="images/Professional_OG.png"/>-->
-<!--    <meta property="twitter:image:width" content="150"/>-->
-<!--    <meta property="twitter:image:height" content="150"/>-->
+  <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<!--    https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
-<!--    <meta name="twitter:card" content="summary" />-->
-<!--    <meta name="twitter:site" content="deeptaanshu.com" />-->
-<!--    <meta property="og:url" content="https://www.deeptaanshu.com" />-->
-<!--    <meta property="og:title" content="Deeptaanshu Kumar" />-->
-<!--    <meta name="image" property="og:image" content="images/Professional_OG.png"/>-->
-<!--    <meta name="image:secure_url" property="og:image:secure_url" content="images/Professional_OG.png"/>-->
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
 </head>
+<body>
 
-<body id=about style="font-family: sans-serif;">
-<!-- Top navbar -->
-<nav id=mainNav
-     class="navbar sticky-top navbar-expand-lg navbar-dark text-uppercase"
-     style="background-color:#05386b;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
-    </button>
-    <a class="navbar-brand text-white" href="https://www.deeptaanshu.com">Deeptaanshu Kumar</a>
-    <div class="collapse navbar-collapse navbar-white" id="navbarTogglerDemo03">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1 active" data-toggle="collapse" data-target="#navbarTogglerDemo03">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#about">About</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1 active" data-toggle="collapse" data-target="#navbarTogglerDemo03">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1 active" data-toggle="collapse" data-target="#navbarTogglerDemo03">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#contact">Contact</a>
-            </li>
-        </ul>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class=" py-4">
+          <h4 class="text-white">About Me</h4>
+          <p class="text-muted">I am the VP of Data Engineering in The Arena Group's Enterprise Data & AI team and am working on streaming data platforms and AI/ML!</p>
+        </div>
+        <!--        <div class="col-sm-4 offset-md-1 py-4">-->
+        <!--          <h4 class="text-white">Contact</h4>-->
+        <!--          <ul class="list-unstyled">-->
+        <!--            <li><a href="#" class="text-white">Follow on Twitter</a></li>-->
+        <!--            <li><a href="#" class="text-white">Like on Facebook</a></li>-->
+        <!--            <li><a href="#" class="text-white">Email me</a></li>-->
+        <!--          </ul>-->
+        <!--        </div>-->
+      </div>
     </div>
-</nav>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="https://www.deeptaanshu.com" class="navbar-brand d-flex align-items-center">
+        <strong>Deeptaanshu Kumar</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!-- Main picture carousel-->
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background: black; width: auto; margin: auto;">
-    <!-- Carousel indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for carousel items -->
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
-        <div class="carousel-item active" style="text-align: center;">
-            <img src="images/Professional.png" alt="Professional" style="width: 75%;margin: auto;">
-        </div>
-        <div class="carousel-item" style="text-align: center;">
-            <img src="images/College.png" alt="College" style="width: 75%;margin: auto;">
-        </div>
-        <div class="carousel-item" style="text-align: center;">
-            <img src="images/Hobbies.png" alt="Hobbies" style="width: 75%;margin: auto;">
-        </div>
-    </div>
-    <!-- Carousel controls -->
-    <a class="carousel-control-prev" href="#about" data-target="#myCarousel" data-slide="prev" style="outline: black;
-            background-color: rgba(0, 0, 0, 0.3); border: 1px solid black;">
-        <span class="carousel-control-prev-icon" style="color: black;"></span>
-    </a>
-    <a class="carousel-control-next" href="#about" data-target="#myCarousel" data-slide="next" style="outline: black;
-            background-color: rgba(0, 0, 0, 0.3); border: 1px solid black;">
-        <span class="carousel-control-next-icon" style="color: black;"></span>
-    </a>
-</div>
+      <div class="carousel-item active">
+        <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+        <img class="bd-placeholder-img" width="100%" height="50%" src="images/Professional.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-<!-- Portfolio section -->
-<div id="portfolio" class="bg-light text-light">&nbsp;</div>
-<div class="bg-light text-light">&nbsp;</div>
-<header class="masthead bg-light text-black">
-    <div class="d-flex align-items-center flex-column">
-        <div class="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-            <h2 class="page-section-heading text-dark text-center text-uppercase text-secondary mb-0 font-weight-bold rounded text-uppercase">
-                Portfolio</h2>
-            <div class="divider-custom divider-dark justify-center">
-                <div class="row justify-content-center">
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-icon"><i class="fas fa-star" style="color: black"></i></div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio card-deck entries first row -->
-        <div class="card-deck" style="margin-bottom: 1%; margin-left: 3%; margin-right: 3%;">
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/LI_Logo.svg" alt="Card image cap"
-                     style="width: 75px; height: 100px;">
-                <div class="card-body text-center">
-                    <p class="card-text">Connect with me on LinkedIn to get insights into the latest technology
-                        trends/tools and be a part of my discussions with industry leaders in Big Data and AI/ML!</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://www.linkedin.com/in/deeptaanshu" target="_blank" class="btn btn-primary"
-                       style="background-color:#05386b;">LinkedIn</a>
-                </div>
-            </div>
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/GoogleScholar_Logo.png" alt="Card image cap"
-                     style="width: 75px; height: 100px">
-                <div class="card-body text-center">
-                    <p class="card-text">View my profile on Google Scholar to see my patents and publications on
-                        topics such as Big Data, Distributed Computing, Databases, etc.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ" target="_blank"
-                       class="btn btn-primary"
-                       style="background-color:#05386b;">Google Scholar</a>
-                </div>
-            </div>
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/GitHub_Logo.jpg" alt="Card image cap"
-                     style="width: 75px; height: 100px">
-                <div class="card-body text-center">
-                    <p class="card-text">Collaborate with me on GitHub and view my software engineering side-projects,
-                        open-source work, and course-related projects!</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://www.github.com/deeptaanshu" target="_blank" class="btn btn-primary"
-                       style="background-color:#05386b;">GitHub</a>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio card-deck entries second row -->
-        <div class="card-deck" style="margin-top: 1%; margin-bottom: 3%; margin-left: 3%; margin-right: 3%;">
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/Quora_Logo.webp" alt="Card image cap"
-                     style="width: 75px; height: 100px">
-                <div class="card-body text-center">
-                    <p class="card-text">Join me on Quora to read my answers to frequently-asked questions
-                        regarding professional certifications, US college academics, etc.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://www.quora.com/profile/Deeptaanshu-Kumar" target="_blank"
-                       class="btn btn-primary"
-                       style="background-color:#05386b;">Quora</a>
-                </div>
-            </div>
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/Medium_Logo.png" alt="Card image cap"
-                     style="width: 75px; height: 100px">
-                <div class="card-body text-center">
-                    <p class="card-text">Follow me on Medium to read my articles on technology-related topics, such
-                        as how to study for Cloud certifications, creating/deploying webapps on AWS, etc.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://www.medium.com/@deeptaanshu" target="_blank" class="btn btn-primary"
-                       style="background-color:#05386b;">Medium</a>
-                </div>
-            </div>
-            <div class="card border-dark">
-                <img class="card-img-top mx-auto pt-3" src="images/AngelList_Logo.png" alt="Card image cap"
-                     style="width: 75px; height: 100px">
-                <div class="card-body text-center">
-                    <p class="card-text">Contact me on AngelList to learn more about my experience in scaling
-                        engineering teams and designing/implementing enterprise data platforms!</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://angel.co/u/deeptaanshu" target="_blank" class="btn btn-primary"
-                       style="background-color:#05386b;">AngelList</a>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="carousel-item">
+        <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+        <img class="bd-placeholder-img" width="100%" height="50%" src="images/College.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+      </div>
+      <div class="carousel-item">
+        <!--        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+        <img class="bd-placeholder-img" width="100%" height="80%" src="images/Hobbies.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+      </div>
     </div>
-</header>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-<!-- Contact Me section -->
-<div id="contact" class="text-secondary" style="background-color:#eac04d">&nbsp;</div>
-<div class="text-secondary" style="background-color:#eac04d">&nbsp;</div>
-<header class="masthead text-center" style="background-color:#eac04d">
-    <div class="container d-flex p-md-0 flex-column mb-0 pb-0">
-        <div class="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-            <h2 class="page-section-heading text-center text-uppercase text-dark mb-0 font-weight-bold rounded text-uppercase">
-                Contact Me</h2>
-            <div class="divider-custom divider-dark justify-center">
-                <div class="row justify-content-center">
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-icon"><i class="fas fa-star" style="color: black"></i></div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
-                    <div class="divider-custom-line" style=""><i class="fas fa-grip-lines" style="color: black"></i>
-                    </div>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- https://dev.to/drsavvina/build-a-simple-working-contact-form-with-bootstrap-4-mcf-->
-        <section class="resume-section mt-0 pt-0">
-            <form class="contact-form col-md-5 p-lg-5 mx-auto mb-3 bg-light text-dark"
-                  action="https://formspree.io/f/mqkgggna"
-                  method="POST">
-                <p>
-                    Please leave your message below and I will get back to you!
-                </p>
-                <div class="form-group">
-                    <input type="name" class="form-control" placeholder="Name" name="name" required/>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" name="name" required/>
-                </div>
-                <div class="form-group">
-                            <textarea class="form-control" type="text" placeholder="Message" rows="7" name="name"
-                                      required></textarea>
-                </div>
-                <div class="form-group row justify-content-center">
-                    <button type="submit" class="btn btn-submit btn-info mx-3" style="background-color:#05386b;">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </section>
-    </div>
-</header>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-<!-- Footer section -->
-<div class="copyright py-4 text-center text-white" style="background-color:#05386b">
-    <div class="container"><small>Copyright ©2020 Deeptaanshu Kumar</small></div>
-</div>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  <div class="album py-5 bg-dark">-->
+<!--    <div class="container">-->
+
+      <div class="modal modal-signin position-static d-block bg-dark py-5" tabindex="-1"  id="modalSignin">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-3 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
+              <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+              <h1 class="fw-bold mb-0 fs-2">Contact Me</h1>
+              <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+              <form class="" action="https://formspree.io/f/mqkgggna" method="POST">
+                <div class="form-floating mb-3">
+                  <input type="input" class="form-control rounded-3" id="floatingInputName" placeholder="Full Name" required>
+                  <label for="floatingInputName">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInputEmail" placeholder="name@example.com" required>
+                  <label for="floatingInputEmail">Email Address</label>
+                </div>
+                <div class="form-outline mb-3">
+                  <textarea type="text" class="form-control rounded-3" placeholder="Message" rows="7" required></textarea>
+<!--                  <label class="form-label">Message</label>-->
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Submit</button>
+                <!--          <small class="text-muted">I will get back to you soon</small>-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--      <section class="resume-section mt-0 pt-0">-->
+      <!--            <form class="contact-form col-md-5 p-lg-5 mx-auto mb-3 bg-light text-dark"-->
+      <!--                  action="https://formspree.io/f/mqkgggna"-->
+      <!--                  method="POST">-->
+      <!--                <p>-->
+      <!--                    Please leave your message below and I will get back to you!-->
+      <!--                </p>-->
+      <!--                <div >-->
+      <!--                    <input type="name" class="form-control" placeholder="Name" name="name" required/>-->
+      <!--                </div>-->
+      <!--                <div >-->
+      <!--                    <input type="email" class="form-control" placeholder="Email" name="name" required/>-->
+      <!--                </div>-->
+      <!--                <div >-->
+      <!--                            <textarea class="form-control" type="text" placeholder="Message" rows="7" name="name"-->
+      <!--                                      required></textarea>-->
+      <!--                </div>-->
+      <!--                <div class="form-group row justify-content-center">-->
+      <!--                    <button type="submit" class="btn btn-submit btn-info mx-3">-->
+      <!--                        Submit-->
+      <!--                    </button>-->
+      <!--                </div>-->
+      <!--            </form>-->
+      <!--        </section>-->
+
+<!--    </div>-->
+<!--  </div>-->
+
+</main>
+
+<footer class="text-muted py-3">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Copyright ©2023 Deeptaanshu Kumar</p>
+<!--    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>-->
+  </div>
+</footer>
+
+<!--<div class="copyright py-4 text-center text-white" style="background-color:#05386b">-->
+<!--    <div class="container"><small>Copyright ©2020 Deeptaanshu Kumar</small></div>-->
+<!--</div>-->
+
+
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
-
-<!-- JavaScript loaded at end -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS, then Fontawesome, and then custom JS scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-<script src="js/smooth_scrolling.js"></script>
