@@ -1,2 +1,2 @@
 # personal-website
-This is the code for my personal website, which uses Bootstrap 5 for its front-end!
+This is the code for my static S3-hosted portfolio website, which uses Bootstrap v5.3.6 for its front-end, and can be found at https://www.deeptaanshu.com
