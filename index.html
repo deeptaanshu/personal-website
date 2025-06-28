@@ -1,681 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic SEO -->
-    <title>Deeptaanshu Kumar – Data Engineering & AI / ML Leader</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Data-engineering & AI leader with 10+ years building cloud-based streaming data platforms - explore my projects, patents, publications, and recent updates.">
-    <meta name="robots" content="index,follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deeptaanshu Kumar - Professional Portfolio</title>
 
-    <!-- Canonical & hreflang -->
-    <link rel="canonical" href="https://www.deeptaanshu.com/">
-    <link rel="alternate" hreflang="en" href="https://www.deeptaanshu.com/">
-    <link rel="alternate" hreflang="x-default" href="https://www.deeptaanshu.com/">
+<!-- Bootstrap 5.3.6 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="Deeptaanshu Kumar">
-    <meta property="og:title" content="Deeptaanshu Kumar – Data Engineering & AI / ML Leader">
-    <meta property="og:description" content="Portfolio of my cloud, data, and AI / ML experience.">
-    <meta property="og:url" content="https://www.deeptaanshu.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="images/Deep_Professional_Headshot.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+<style>
+  /* ===== single fade-in animation ===== */
+  .isotope-item   {padding:1rem;transition:opacity .6s ease;}
+  .isotope-hidden {opacity:0!important;transition:none!important;}
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@DeeptaanshuK">
-    <meta name="twitter:title" content="Deeptaanshu Kumar - Data Engineering & AI / ML Leader">
-    <meta name="twitter:description" content="Cloud, Data, and AI / ML portfolio.">
-    <meta name="twitter:image" content="images/Deep_Professional_Headshot.png">
+  /* ===== card hover effect ===== */
+  .portfolio-content{
+    overflow:hidden;
+    transition:box-shadow .25s ease,transform .25s ease;
+  }
+  .portfolio-content:hover,
+  .portfolio-content:focus-within{
+    box-shadow:0 1rem 2rem rgba(0,0,0,.45);
+    transform:translateY(-6px) scale(1.04);
+  }
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Deeptaanshu Kumar",
-            "jobTitle": "VP of Data Engineering",
-            "url": "https://www.deeptaanshu.com/",
-            "sameAs": [
-                "https://www.linkedin.com/in/deeptaanshu",
-                "https://scholar.google.com/citations?user=KRHMRKEAAAAJ&hl=en&oi=ao",
-                "https://github.com/deeptaanshu",
-                "https://x.com/DeeptaanshuK"
-            ]
-        }
-    </script>
+  /* ===== hyperlink cues ===== */
+  .portfolio-content a{cursor:pointer;position:relative;display:block;}
+  .portfolio-content a::after{
+    content:"🔗";
+    position:absolute;
+    top:.5rem;right:.5rem;
+    background:rgba(0,0,0,.6);
+    color:#fff;font-size:1.15rem;line-height:1;
+    padding:.15rem .35rem;border-radius:.25rem;
+    opacity:0;transition:opacity .25s ease;
+  }
+  .portfolio-content a:hover::after,
+  .portfolio-content a:focus-visible::after{opacity:1;}
 
-    <!-- Performance Hints -->
-    <link rel="preload" href="assets/dist/css/bootstrap.min.css" as="style">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <!-- Site Verification -->
-    <!--    <meta name="google-site-verification" content="YOUR-VERIFICATION-CODE">-->
-
-    <!-- Favicons & theme -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/Deeptaanshu_Professional_Headshot.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/Deeptaanshu_Professional_Headshot.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/Deeptaanshu_Professional_Headshot.png">
-    <link rel="mask-icon" href="images/Deeptaanshu_Professional_Headshot.png" type="image/png" color="#712cf9">
-    <link rel="manifest" href="assets/dist/manifest.json">
-    <meta name="theme-color" content="#712cf9">
-
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-
-        .b-example-divider {
-          height: 3rem;
-          background-color: rgba(0, 0, 0, .1);
-          border: solid rgba(0, 0, 0, .15);
-          border-width: 1px 0;
-          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-          flex-shrink: 0;
-          width: 1.5rem;
-          height: 100vh;
-        }
-
-        .bi {
-          vertical-align: -.125em;
-          fill: currentColor;
-        }
-
-        .nav-scroller {
-          position: relative;
-          z-index: 2;
-          height: 2.75rem;
-          overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-          display: flex;
-          flex-wrap: nowrap;
-          padding-bottom: 1rem;
-          margin-top: -1px;
-          overflow-x: auto;
-          text-align: center;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch;
-        }
-
-         .card {
-          height: 100%;
-          display: flex;
-        }
-
-        .card-logo {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;   /* scales the image inside the box without distortion */
-          }
-
-        .card-block {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-        }
-
-        .card.card-footer {
-            align-self: flex-end;
-            flex: 1 1 auto;
-        }
-    </style>
+  /* ===== filter buttons ===== */
+  .portfolio-filters li{cursor:pointer;display:inline-block;margin:.25rem .5rem;padding:.25rem .75rem}
+  .filter-active{background:#0d6efd;color:#fff}
+</style>
 </head>
-
 <body>
-<header>
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About Me</h4>
-                    <p class="text-muted-white text-white">I am the VP of Data Engineering in The Arena Group's
-                        Enterprise Data & AI team, and I specialize in implementing petabyte-scale streaming data
-                        platforms for AI/ML use cases!</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Navigate</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.deeptaanshu.com/" class="text-white">Home</a></li>
-                        <li><a href="#portfolio" class="text-white">Portfolio</a></li>
-                        <li><a href="#recent-updates" class="text-white">Recent Updates</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-            <a href="https://www.deeptaanshu.com" class="navbar-brand d-flex align-items-center">
-                <strong>Deeptaanshu Kumar</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </div>
-</header>
 
-<main class="overflow-scroll">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="text-align: center;">
-                <img class="bd-placeholder-img" width="80%" height="100%" src="images/Professional.png"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-            </div>
-            <div class="carousel-item" style="text-align: center;">
-                <img class="bd-placeholder-img" width="80%" height="100%" src="images/College.png" aria-hidden="true"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-            </div>
-            <div class="carousel-item" style="text-align: center;">
-                <img class="bd-placeholder-img" width="80%" height="100%" src="images/Hobbies.png" aria-hidden="true"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" style="background-image: url(images/Left_Arrow.svg);}"
-                  aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" style="background-image: url(images/Right_Arrow.svg);}"
-                  aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div class="album py-0 bg-light" id="portfolio">
-        <div class="container">
-            <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
-                <h1 class="fw-bold mb-0 fs-2">Portfolio</h1>
-            </div>
-            <div class="modal-body p-5 pt-0">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/LinkedIn_Logo.png" role="img" aria-label="Placeholder: LinkedIn Logo"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Connect with me on LinkedIn to learn about new technology
-                                    trends/tools and join my discussions with industry leaders in Big Data and
-                                    AI/ML!</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.linkedin.com/in/deeptaanshu" class="btn btn-primary"
-                                   target="_blank">LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/GoogleScholar_Logo.png" role="img"
-                                 aria-label="Placeholder: Google Scholar Logo" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Google Scholar</title></img>
-                            <div class="card-body">
-                                <p class="card-text">View my profile on Google Scholar to see my patents and
-                                    publications on topics such as Big Data, Distributed Computing, and Databases.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ"
-                                   class="btn btn-primary" target="_blank">Google Scholar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/GitHub_Logo.png"
-                                 role="img" aria-label="Placeholder: GitHub Logo" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>GitHub</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Collaborate with me on GitHub and view my data/software engineering
-                                    side-projects, open-source work, and course-related activities!</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://github.com/deeptaanshu" class="btn btn-primary"
-                                   target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/Quora_Logo.png"
-                                 role="img" aria-label="Placeholder: Quora Logo" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Quora</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Join me on Quora to read my answers to frequently-asked questions
-                                    about professional certifications, school/academics, etc.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.quora.com/profile/Deeptaanshu-Kumar" class="btn btn-primary"
-                                   target="_blank">Quora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/Medium_Logo.png"
-                                 role="img" aria-label="Placeholder: Medium Logo" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Medium</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Follow me on Medium to read my articles on technology topics, such
-                                    as Cloud certifications and deploying WebApps on AWS.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://deeptaanshu.medium.com/" class="btn btn-primary"
-                                   target="_blank">Medium</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/Wellfound_Logo.png" role="img" aria-label="Placeholder: Wellfound Logo"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Wellfound</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Contact me on Wellfound to learn more about my experience in
-                                    scaling Data teams and implementing enterprise data platforms!</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://wellfound.com/u/deeptaanshu" class="btn btn-primary" target="_blank">Wellfound</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/X_Logo.png"
-                                 role="img" aria-label="Placeholder: X / Twitter Logo"
-                                 preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>X / Twitter</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Interact with me on X / Twitter and read my tweets about Tech &
-                                    AI.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.twitter.com/DeeptaanshuK" class="btn btn-primary"
-                                   target="_blank">X / Twitter</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/DBLP_Logo.png"
-                                 role="img" aria-label="Placeholder: DBLP Logo" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>DBLP</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Review my Computer Science-related research papers on dblp's CS
-                                    bibliography.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://dblp.org/pid/307/3594.html" class="btn btn-primary"
-                                   target="_blank">DBLP</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/DeepAI_Logo.jpeg" role="img"
-                                 aria-label="Placeholder: DeepAI Logo"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>DeepAI
-                            Library</title></img>
-                            <div class="card-body">
-                                <p class="card-text">View my DeepAI profile that shows my research papers and frequent
-                                    collaborators.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://deepai.org/profile/deeptaanshu-kumar" class="btn btn-primary"
-                                   target="_blank">DeepAI</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="py-5">
+  <div class="container">
 
-    <div class="album py-0 .bg-light-subtle" id="recent-updates">
-        <div class="container">
-            <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
-                <h1 class="fw-bold mb-0 fs-2">Recent Updates</h1>
-            </div>
-            <div class="modal-body p-5 pt-0">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-1.png" role="img"
-                                 aria-label="Placeholder: Adswerve"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Adserve</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">Case study by Adswerve, which highlights my Data Engineering
-                                    work.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://adswerve.com/results/the-arena-group" class="btn btn-primary"
-                                   target="_blank">Adswerve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-2.png" role="img"
-                                 aria-label="Placeholder: Exponent Course" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Exponent Course</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Data Engineering interview prep course that I co-designed with
-                                    Exponent.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.tryexponent.com/courses/data-engineering"
-                                   class="btn btn-primary" target="_blank">Exponent</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-3.png"
-                                 role="img" aria-label="Placeholder: Exponent Blog" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Exponent Blog</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Data Engineering interview guide that I reviewed and edited for
-                                    Exponent.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.tryexponent.com/blog/data-engineering-interview"
-                                   class="btn btn-primary"
-                                   target="_blank">Exponent</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-4.png"
-                                 role="img" aria-label="Placeholder: Poets & Quants"
-                                 preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>Poets & Quants</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Poets & Quants wrote an article about my role in Wharton's MBA
-                                    program.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://poetsandquants.com/2023/09/19/chicago-booth-returns-to-top-of-pqs-2023-executive-mba-ranking/2/"
-                                   class="btn btn-primary"
-                                   target="_blank">Poets & Quants</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-5.png"
-                                 role="img" aria-label="Placeholder: MIT CSAIL" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>MIT CSAIL</title></img>
-                            <div class="card-body">
-                                <p class="card-text">MIT CSAIL's list of publications, which includes my publications
-                                    with several MIT
-                                    professors.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://dsg.csail.mit.edu/publications/" class="btn btn-primary"
-                                   target="_blank">MIT CSAIL</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-6.png" role="img"
-                                 aria-label="Placeholder: Wharton Research"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Wharton
-                            Research</title></img>
-                            <div class="card-body">
-                                <p class="card-text">Wharton Professor Jacqueline Kirtley served as my Advisor for my
-                                    MBA research project.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://faculty.wharton.upenn.edu/wp-content/uploads/2017/08/JacquelineKirtley_CV_05012025.pdf"
-                                   class="btn btn-primary" target="_blank">Wharton Research</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-7.png"
-                                 role="img" aria-label="Placeholder: CERB"
-                                 preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>CERB</title></img>
-                            <div class="card-body">
-                                <p class="card-text">I serve on the Montgomery County, MD Committee Evaluation and
-                                    Review Board (CERB).</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://www.montgomerycountymd.gov/boards/sites/cerb/index.html"
-                                   class="btn btn-primary"
-                                   target="_blank">CERB</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-8.png"
-                                 role="img" aria-label="Placeholder: CERB" preserveAspectRatio="xMidYMid slice"
-                                 focusable="false"><title>CERB</title></img>
-                            <div class="card-body">
-                                <p class="card-text">My official CERB selection notice from the Montgomery
-                                    County, MD County Executive Office.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://montgomerycountymd.granicus.com/MetaViewer.php?view_id=169&clip_id=17408&meta_id=180289"
-                                   class="btn btn-primary"
-                                   target="_blank">CERB</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-9.png" role="img"
-                                 aria-label="Placeholder: DBOS"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>DBOS</title></img>
-                            <div class="card-body">
-                                <p class="card-text">I was a contributor to DBOS, which was an CMU-MIT-Stanford
-                                    collaboration.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://dbos-project.github.io/" class="btn btn-primary"
-                                   target="_blank">DBOS</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-10.png" role="img"
-                                 aria-label="Placeholder: DSAA"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>DSAA</title></img>
-                            <div class="card-body">
-                                <p class="card-text">My Big Data presentation at the IEEE Data Science and Advanced
-                                    Analytics (DSAA) conference.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="http://dsaa2022.dsaa.co/posters/" class="btn btn-primary"
-                                   target="_blank">DSAA</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-11.png" role="img"
-                                 aria-label="Placeholder: HPEC"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>HPEC</title></img>
-                            <div class="card-body">
-                                <p class="card-text">My Distributed Systems session at IEEE's High Performance Extreme
-                                    Computing
-                                    (HPEC) conference.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://ieee-hpec.org/2022/ieee-hpec.org/index.php/ieee-hpec-2022-prelim-agenda/index.html"
-                                   class="btn btn-primary"
-                                   target="_blank">HPEC</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-12.png" role="img"
-                                 aria-label="Placeholder: ASTESJ"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>ASTESJ</title></img>
-                            <div class="card-body">
-                                <p class="card-text">One of my AI-related research papers was published in Volume 7
-                                    (Issue 4) of the
-                                    ASTESJ journal.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://astesj.com/wp-content/uploads/Contents/V7_N4/TC.pdf"
-                                   class="btn btn-primary"
-                                   target="_blank">ASTESJ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-13.png" role="img"
-                                 aria-label="Placeholder: VLDB CIDR"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>VLDB CIDR</title></img>
-                            <div class="card-body">
-                                <p class="card-text">This presentation covered the updates on my DBOS project at VLDB's
-                                    CIDR conference.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://vldb.org/cidrdb/2022/index.html" class="btn btn-primary"
-                                   target="_blank">VLDB CIDR</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-14.png" role="img"
-                                 aria-label="Placeholder: VLDB AIDB"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>VLDB AIDB</title></img>
-                            <div class="card-body">
-                                <p class="card-text">This presentation included an overview of DBOS' ML capabilities at
-                                    VLDB's AIDB workshop.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://sites.google.com/view/aidb2022/home/accepted-papers"
-                                   class="btn btn-primary"
-                                   target="_blank">VLDB AIDB</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-15.png" role="img"
-                                 aria-label="Placeholder: VLDB Poly"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>VLDB Poly</title></img>
-                            <div class="card-body">
-                                <p class="card-text">This presentation showed DBOS' Data Governance features at
-                                    VLDB's Poly workshop.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="https://sites.google.com/view/poly21/program"
-                                   class="btn btn-primary"
-                                   target="_blank">VLDB Poly</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"
-                                 src="images/number-icon-1024-16.png" role="img"
-                                 aria-label="Placeholder: WiMob"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>WiMob</title></img>
-                            <div class="card-body">
-                                <p class="card-text">This presentation analyzed the effectiveness of my patented
-                                    sobriety-detection AI model.</p>
-                            </div>
-                            <div class="card-footer justify-content-between align-items-center text-center">
-                                <a href="http://www.wimob.org/wimob2021/programme.html" class="btn btn-primary"
-                                   target="_blank">WiMob</a>
-                            </div>
-                        </div>
-                    </div>
-<!--                    <div class="col">-->
-<!--                        <div class="card shadow-sm">-->
-<!--                            <img class="card-logo bd-placeholder-img card-img-top w-50 mx-auto pt-3"-->
-<!--                                 src="images/ACM_Digital_Library_Logo.jpeg" role="img"-->
-<!--                                 aria-label="Placeholder: ACM Digital Library Logo"-->
-<!--                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>ACM Digital-->
-<!--                            Library</title></img>-->
-<!--                            <div class="card-body">-->
-<!--                                <p class="card-text">View my research papers on Big Data and AI on ACM's Digital-->
-<!--                                    Library.</p>-->
-<!--                            </div>-->
-<!--                            <div class="card-footer justify-content-between align-items-center text-center">-->
-<!--                                <a href="https://dl.acm.org/profile/99659943129" class="btn btn-primary"-->
-<!--                                   target="_blank">ACM Digital Library</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-<footer class="text-muted py-3 bg-dark">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#" class="link-light">Back to top</a>
+    <!-- heading + filters -->
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-7">
+        <h3 class="mb-1">Hi, I'm Deeptaanshu Kumar</h3>
+        <!-- NEW background paragraph -->
+        <p class="lead mb-3">
+          I’m the VP of Data Engineering at The Arena Group with over a decade of experience building petabyte-scale real-time streaming data platforms
+          for more than 130MM+ global users with over 50k RPS to serve various AI/ML use cases.
         </p>
-        <p class="mb-1 text-white">Copyright ©2020 Deeptaanshu Kumar</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <ul class="portfolio-filters list-unstyled mb-0">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-education">Education</li>
+          <li data-filter=".filter-portfolio">Portfolio</li>
+          <li data-filter=".filter-recent-updates">Recent Updates</li>
+        </ul>
+      </div>
     </div>
-</footer>
+
+    <!-- 5-column grid (15 items) -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 isotope-container">
+      <!-- row 1 -->
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=1" target="_blank"><img src="https://picsum.photos/600/400?random=1"  alt="1" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=2" target="_blank"><img src="https://picsum.photos/600/400?random=2"  alt="2" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img src="https://picsum.photos/600/400?random=3"  alt="3" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-books"><div class="portfolio-content"><a href="https://example.com/?id=4" target="_blank"><img src="https://picsum.photos/600/400?random=4"  alt="4" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=5" target="_blank"><img src="https://picsum.photos/600/400?random=5"  alt="5" class="img-fluid"></a></div></div>
+
+      <!-- row 2 -->
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=6"><img src="https://picsum.photos/600/400?random=6"  alt="6" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=7"><img src="https://picsum.photos/600/400?random=7"  alt="7" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-books"><div class="portfolio-content"><a href="https://example.com/?id=8"><img src="https://picsum.photos/600/400?random=8"  alt="8" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=9"><img src="https://picsum.photos/600/400?random=9"  alt="9" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=10"><img src="https://picsum.photos/600/400?random=10" alt="10" class="img-fluid"></a></div></div>
+
+      <!-- row 3 -->
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=11"><img src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-books"><div class="portfolio-content"><a href="https://example.com/?id=12"><img src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=13"><img src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=14"><img src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=15"><img src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div></div>
+
+      <!-- row 4 -->
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=11"><img src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-books"><div class="portfolio-content"><a href="https://example.com/?id=12"><img src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=13"><img src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=14"><img src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=15"><img src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div></div>
+
+      <!-- row 5 -->
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=11"><img src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-books"><div class="portfolio-content"><a href="https://example.com/?id=12"><img src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-app"><div class="portfolio-content"><a href="https://example.com/?id=13"><img src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-product"><div class="portfolio-content"><a href="https://example.com/?id=14"><img src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div></div>
+      <div class="col isotope-item filter-branding"><div class="portfolio-content"><a href="https://example.com/?id=15"><img src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div></div>
+
+    </div><!-- /.row -->
+  </div>
+</section>
+
+<!-- JS: Bootstrap, ImagesLoaded, Isotope -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const grid=document.querySelector('.isotope-container');
+
+  imagesLoaded(grid,()=>{
+    const iso=new Isotope(grid,{
+      itemSelector:'.isotope-item',
+      layoutMode  :'fitRows',
+      transitionDuration:'0.6s',
+      hiddenStyle :{opacity:0},
+      visibleStyle:{opacity:1}
+    });
+
+    document.querySelectorAll('.portfolio-filters li').forEach(btn=>{
+      btn.addEventListener('click',function(){
+        document.querySelector('.filter-active')?.classList.remove('filter-active');
+        this.classList.add('filter-active');
+        iso.arrange({filter:this.dataset.filter});
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
