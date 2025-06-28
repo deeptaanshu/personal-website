@@ -9,11 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* ===== single fade-in animation ===== */
+        /* === single fade-in on filter/resize === */
         .isotope-item   {padding:1rem;transition:opacity .6s ease;}
         .isotope-hidden {opacity:0!important;transition:none!important;}
 
-        /* ===== card hover effect ===== */
+        /* === card hover, lift & link cues === */
         .portfolio-content{
           overflow:hidden;
           transition:box-shadow .25s ease,transform .25s ease;
@@ -23,38 +23,32 @@
           box-shadow:0 1rem 2rem rgba(0,0,0,.45);
           transform:translateY(-6px) scale(1.04);
         }
+        .portfolio-content a{position:relative;display:block;cursor:pointer;}
 
-        /* ===== hyperlink cues ===== */
-        .portfolio-content a{cursor:pointer;position:relative;display:block;}
+        /* link icon */
         .portfolio-content a::after{
           content:"🔗";
-          position:absolute;
-          top:.5rem;right:.5rem;
-          background:rgba(0,0,0,.6);
-          color:#fff;font-size:1.15rem;line-height:1;
+          position:absolute;top:.5rem;right:.5rem;
+          background:rgba(0,0,0,.6);color:#fff;font-size:1.15rem;line-height:1;
           padding:.15rem .35rem;border-radius:.25rem;
           opacity:0;transition:opacity .25s ease;
         }
         .portfolio-content a:hover::after,
         .portfolio-content a:focus-visible::after{opacity:1;}
 
-        /* ===== text overlay on hover ===== */
+        /* === perfectly centred overlay text (transform) === */
         .overlay-text{
-          position:absolute;            /* sit on top of the image            */
-          inset:0;                      /* stretch across the whole card      */
-          display:flex;                 /* enable flexbox                     */
-          align-items:center;           /* vertical centering  ⬆️/⬇️           */
-          justify-content:center;       /* horizontal centering ⬅️/➡️          */
-          position:absolute;inset:0;
-          display:flex;align-items:center;justify-content:center;
+          position:absolute;top:0;right:0;bottom:0;left:0;      /* cover whole image  */
+          display:flex;align-items:center;justify-content:center;/* centre both axes  */
           background:rgba(0,0,0,.55);
           color:#fff;font-weight:600;font-size:1.15rem;text-shadow:0 1px 2px #000;
           opacity:0;transition:opacity .25s ease;
+          pointer-events:none;text-align:center;                 /* never blocks click */
         }
         .portfolio-content a:hover .overlay-text,
         .portfolio-content a:focus-visible .overlay-text{opacity:1;}
 
-        /* ===== filter buttons ===== */
+        /* filter buttons */
         .portfolio-filters li{cursor:pointer;display:inline-block;margin:.25rem .5rem;padding:.25rem .75rem}
         .filter-active{background:#0d6efd;color:#fff}
     </style>
@@ -72,7 +66,8 @@
                 <p class="lead mb-3">
                     I’m the VP of Data Engineering at The Arena Group with over a decade of experience building
                     petabyte-scale real-time streaming data platforms
-                    for more than 130MM+ global users with over 50k RPS to serve various AI/ML use cases.
+                    for more than 130MM+ global users with over 50k requests per second
+                    to serve various AI/ML use cases.
                 </p>
             </div>
             <div class="col-lg-5 text-lg-end">
@@ -90,27 +85,33 @@
             <!-- row 1 -->
             <div class="col isotope-item filter-portfolio">
                 <div class="portfolio-content"><a href="https://www.linkedin.com/in/deeptaanshu" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=1" alt="1" class="img-fluid"></a></div>
+                        src="https://picsum.photos/600/400?random=1" alt="1" class="img-fluid"><span
+                        class="overlay-text">LinkedIn</span></a>
+                </div>
+            </div>
+            <div class="col isotope-item filter-education">
+                <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
+                        src="https://picsum.photos/600/400?random=2" alt="2" class="img-fluid"><span
+                        class="overlay-text">MBA (Triple-Major):<br>Business Analytics,<br>Marketing & Operations<br>Management, and<br>Entrepreneurship & <br>Innovation</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-education">
                 <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
                         src="https://picsum.photos/600/400?random=3" alt="3" class="img-fluid"><span
-                        class="overlay-text">View Product view view view</span></a></div>
+                        class="overlay-text">MS (with Specialization):<br>Computer Science<br>(Artificial Intelligence)</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-education">
-                <div class="portfolio-content"><a href="https://example.com/?id=4" target="_blank"><img
+                <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
                         src="https://picsum.photos/600/400?random=4" alt="4" class="img-fluid"><span
-                        class="overlay-text">View Product</span></a></div>
-            </div>
-            <div class="col isotope-item filter-education">
-                <div class="portfolio-content"><a href="https://example.com/?id=5" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=5" alt="5" class="img-fluid"><span
-                        class="overlay-text">View Product</span></a></div>
+                        class="overlay-text">BS + MS:<br>Electrical and<br>Computer Engineering</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ"
-                                                  target="_blank"><img src="https://picsum.photos/600/400?random=2"
-                                                                       alt="2" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ" target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="5" class="img-fluid"><span
+                        class="overlay-text">Google Scholar</span></a>
+                </div>
             </div>
 
             <!-- row 2 -->
