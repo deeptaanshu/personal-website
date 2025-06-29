@@ -18,6 +18,9 @@
           overflow:hidden;
           transition:box-shadow .25s ease,transform .25s ease;
         }
+        .portfolio-content img{
+          border:1px solid #000;   /* swap 1px→2px or solid→dashed as needed */
+        }
         .portfolio-content:hover,
         .portfolio-content:focus-within{
           box-shadow:0 1rem 2rem rgba(0,0,0,.45);
@@ -65,8 +68,8 @@
                 <!-- NEW background paragraph -->
                 <p class="lead mb-3">
                     <strong><u>Summary</u></strong>: I’m an Engineering Executive with over a decade of
-                    experience building real-time streaming data platforms for 130MM+ global users that
-                    handle 50k+ requests per second and serve various AI/ML use cases.<br>
+                    experience building petabyte-scale real-time streaming data platforms that have served
+                    various AI/ML use cases by processing 50K+ requests per second for 130MM+ global users.<br>
                     <strong><u>Profession</u></strong>: VP of Data Engineering @ The Arena Group<br>
                     <strong><u>Education</u></strong>: MBA @ Wharton (UPenn), MS in CS (AI) @ Georgia Tech,
                     and BS + MS in ECE @ Carnegie Mellon
@@ -82,129 +85,241 @@
             </div>
         </div>
 
-        <!-- 5-column grid (15 items) -->
+        <!-- 4-column grid -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 isotope-container">
             <!-- row 1 -->
             <div class="col isotope-item filter-portfolio">
                 <div class="portfolio-content"><a href="https://www.linkedin.com/in/deeptaanshu" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=1" alt="1" class="img-fluid"><span
+                        src="images/LinkedIn_Logo.png" alt="Deeptaanshu_Kumar_LinkedIn" class="img-fluid"><span
                         class="overlay-text">LinkedIn</span></a>
                 </div>
             </div>
             <div class="col isotope-item filter-education">
                 <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=2" alt="2" class="img-fluid"><span
+                        src="images/Wharton_Logo.png" alt="Deeptaanshu_Kumar_Wharton_MBA"
+                        class="img-fluid"><span
                         class="overlay-text">MBA (Triple-Major):<br>Business Analytics,<br>Marketing & Operations Management,<br>and Entrepreneurship & Innovation</span></a>
                 </div>
             </div>
             <div class="col isotope-item filter-education">
                 <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=3" alt="3" class="img-fluid"><span
+                        src="images/Georgia_Tech_Logo.png" alt="Deeptaanshu_Kumar_MS_CS_AI_Georgia_Tech"
+                        class="img-fluid"><span
                         class="overlay-text">MS (with Specialization):<br>Computer Science<br>(Artificial Intelligence)</span></a>
                 </div>
             </div>
             <div class="col isotope-item filter-education">
                 <div class="portfolio-content"><a href="https://example.com/?id=3" target="_blank"><img
-                        src="https://picsum.photos/600/400?random=4" alt="4" class="img-fluid"><span
+                        src="images/Carnegie_Mellon_Logo.png"
+                        alt="Deeptaanshu_Kumar_BS_And_MS_ECE_Carnegie_Mellon" class="img-fluid"><span
                         class="overlay-text">BS + MS:<br>Electrical and<br>Computer Engineering</span></a>
                 </div>
             </div>
+            <!-- row 2 -->
             <div class="col isotope-item filter-portfolio">
                 <div class="portfolio-content"><a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ"
                                                   target="_blank"><img
-                        src="https://picsum.photos/600/400?random=5" alt="5" class="img-fluid"><span
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Google_Scholar"
+                        class="img-fluid"><span
                         class="overlay-text">Google Scholar</span></a>
                 </div>
             </div>
-
-            <!-- row 2 -->
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://github.com/deeptaanshu"><img
-                        src="https://picsum.photos/600/400?random=6" alt="6" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://github.com/deeptaanshu"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_GitHub"
+                        class="img-fluid"><span
+                        class="overlay-text">GitHub</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://www.quora.com/profile/Deeptaanshu-Kumar"><img
-                        src="https://picsum.photos/600/400?random=7" alt="7" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://www.quora.com/profile/Deeptaanshu-Kumar"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Quora"
+                        class="img-fluid"><span
+                        class="overlay-text">Quora</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://deeptaanshu.medium.com/"><img
-                        src="https://picsum.photos/600/400?random=8" alt="8" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://www.quora.com/profile/Deeptaanshu-Kumar"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Medium"
+                        class="img-fluid"><span
+                        class="overlay-text">Medium</span></a>
+                </div>
             </div>
-            <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://wellfound.com/u/deeptaanshu"><img
-                        src="https://picsum.photos/600/400?random=9" alt="9" class="img-fluid"></a></div>
-            </div>
-            <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://www.twitter.com/DeeptaanshuK"><img
-                        src="https://picsum.photos/600/400?random=10" alt="10" class="img-fluid"></a></div>
-            </div>
-
             <!-- row 3 -->
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://dblp.org/pid/307/3594.html"><img
-                        src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://x.com/DeeptaanshuK"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_X_Twitter"
+                        class="img-fluid"><span
+                        class="overlay-text">X / Twitter</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-portfolio">
-                <div class="portfolio-content"><a href="https://deepai.org/profile/deeptaanshu-kumar"><img
-                        src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://wellfound.com/u/deeptaanshu"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Wellfound"
+                        class="img-fluid"><span
+                        class="overlay-text">Wellfound</span></a>
+                </div>
             </div>
-            <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://www.tryexponent.com/courses/data-engineering"><img
-                        src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div>
+            <div class="col isotope-item filter-portfolio">
+                <div class="portfolio-content"><a href="https://dblp.org/pid/307/3594.html"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_DBLP"
+                        class="img-fluid"><span
+                        class="overlay-text">DBLP</span></a>
+                </div>
             </div>
-            <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=14"><img
-                        src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div>
+            <div class="col isotope-item filter-portfolio">
+                <div class="portfolio-content"><a href="https://deepai.org/profile/deeptaanshu-kumar"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_DeepAI"
+                        class="img-fluid"><span
+                        class="overlay-text">DeepAI</span></a>
+                </div>
             </div>
-            <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=15"><img
-                        src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div>
-            </div>
-
             <!-- row 4 -->
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=11"><img
-                        src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://adswerve.com/results/the-arena-group"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Adswerve"
+                        class="img-fluid"><span
+                        class="overlay-text">Adswerve</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=12"><img
-                        src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://www.tryexponent.com/courses/data-engineering"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Exponent_Course"
+                        class="img-fluid"><span
+                        class="overlay-text">Exponent Course</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=13"><img
-                        src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://www.tryexponent.com/blog/data-engineering-interview"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Exponent_Blog"
+                        class="img-fluid"><span
+                        class="overlay-text">Exponent Blog</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=14"><img
-                        src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a
+                        href="https://poetsandquants.com/2023/09/19/chicago-booth-returns-to-top-of-pqs-2023-executive-mba-ranking/2/"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Poets_And_Quants"
+                        class="img-fluid"><span
+                        class="overlay-text">Poets & Quants</span></a>
+                </div>
             </div>
-            <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=15"><img
-                        src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div>
-            </div>
-
             <!-- row 5 -->
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=11"><img
-                        src="https://picsum.photos/600/400?random=11" alt="11" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://dsg.csail.mit.edu/publications/"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_MIT_CSAIL"
+                        class="img-fluid"><span
+                        class="overlay-text">MIT CSAIL</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=12"><img
-                        src="https://picsum.photos/600/400?random=12" alt="12" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a
+                        href="https://faculty.wharton.upenn.edu/wp-content/uploads/2017/08/JacquelineKirtley_CV_05012025.pdf"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_Wharton_Research"
+                        class="img-fluid"><span
+                        class="overlay-text">Wharton Research</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=13"><img
-                        src="https://picsum.photos/600/400?random=13" alt="13" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a href="https://www.montgomerycountymd.gov/boards/sites/cerb/index.html"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_CERB"
+                        class="img-fluid"><span
+                        class="overlay-text">CERB</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=14"><img
-                        src="https://picsum.photos/600/400?random=14" alt="14" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a
+                        href="https://montgomerycountymd.granicus.com/MetaViewer.php?view_id=169&clip_id=17408&meta_id=180289"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_CERB_Nomination"
+                        class="img-fluid"><span
+                        class="overlay-text">CERB Nomination</span></a>
+                </div>
+            </div>
+            <!-- row 6 -->
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a href="https://dbos-project.github.io/"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_DBOS"
+                        class="img-fluid"><span
+                        class="overlay-text">DBOS</span></a>
+                </div>
             </div>
             <div class="col isotope-item filter-recent-updates">
-                <div class="portfolio-content"><a href="https://example.com/?id=15"><img
-                        src="https://picsum.photos/600/400?random=15" alt="15" class="img-fluid"></a></div>
+                <div class="portfolio-content"><a
+                        href="http://dsaa2022.dsaa.co/posters/"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_DSAA_2022"
+                        class="img-fluid"><span
+                        class="overlay-text">DSAA 2022</span></a>
+                </div>
             </div>
-
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a href="https://ieee-hpec.org/2022/ieee-hpec.org/index.php/ieee-hpec-2022-prelim-agenda/index.html"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_HPEC_2022"
+                        class="img-fluid"><span
+                        class="overlay-text">HPEC 2022</span></a>
+                </div>
+            </div>
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a
+                        href="https://astesj.com/wp-content/uploads/Contents/V7_N4/TC.pdf"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_ASTESJ_2022"
+                        class="img-fluid"><span
+                        class="overlay-text">ASTESJ 2022</span></a>
+                </div>
+            </div>
+            <!-- row 7 -->
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a href="https://vldb.org/cidrdb/2022/index.html"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_VLDB_CIDR_2022"
+                        class="img-fluid"><span
+                        class="overlay-text">VLDB_CIDR_2022</span></a>
+                </div>
+            </div>
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a
+                        href="https://sites.google.com/view/aidb2022/home/accepted-papers"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_VLDB_AIDB_2022"
+                        class="img-fluid"><span
+                        class="overlay-text">VLDB AIDB 2022</span></a>
+                </div>
+            </div>
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a href="https://sites.google.com/view/poly21/program"
+                                                  target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_VLDB_Poly_2021"
+                        class="img-fluid"><span
+                        class="overlay-text">VLDB Poly 2021</span></a>
+                </div>
+            </div>
+            <div class="col isotope-item filter-recent-updates">
+                <div class="portfolio-content"><a
+                        href="http://www.wimob.org/wimob2021/programme.html"
+                        target="_blank"><img
+                        src="https://picsum.photos/600/400?random=5" alt="Deeptaanshu_Kumar_WiMob_2021"
+                        class="img-fluid"><span
+                        class="overlay-text">WiMob 2021</span></a>
+                </div>
+            </div>
         </div><!-- /.row -->
     </div>
 </section>
