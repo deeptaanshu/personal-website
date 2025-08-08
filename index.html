@@ -1,281 +1,431 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Deeptaanshu Kumar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Welcome to Deeptaanshu Kumar's Portfolio Website!">
-  <meta name="author" content="Deeptaanshu Kumar">
+    <!-- Adsense Site Ownership Validation -->
+    <meta name="google-adsense-account" content="ca-pub-1253323402957543">
 
-  <!--    https://www.quicksprout.com/open-graph-tags/ - Open Graph Tags-->
-  <meta name="title" property="og:title" content="Deeptaanshu Kumar"/>
-  <meta name="type" property="og:type" content="website"/>
-  <meta name="url" property="og:url" content="https://www.deeptaanshu.com"/>
-  <meta name="description" property="og:description" content="Welcome to my website! Please take a look at my work and feel free to contact me!"/>
-  <meta property="og:image" content="images/Professional.png" type="image/png"/>
-  <meta property="og:image:secure_url" content="images/Professional.png" type="image/png"/>
-  <meta property="og:image" content="images/DeepProfessional_Favicon.png" type="image/png"/>
-  <meta property="og:image:secure_url" content="images/DeepProfessional_Favicon.png" type="image/png"/>
-  <meta property="og:image" content="images/Professional_OG_250x244.png" type="image/png"/>
-  <meta property="og:image:secure_url" content="images/Professional_OG_250x244.png" type="image/png"/>
+    <!-- Basic SEO -->
+    <title>Deeptaanshu Kumar – Data Engineering & AI / ML Leader</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Data Engineering & AI leader with over a decade of experience in building cloud-based streaming data platforms - explore my projects, patents, publications, and recent updates.">
+    <meta name="robots" content="index,follow">
 
-  <link rel="canonical" href="https://www.deeptaanshu.com/">
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://www.deeptaanshu.com/">
+    <link rel="alternate" hreflang="en" href="https://www.deeptaanshu.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.deeptaanshu.com/">
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="images/DeepProfessional_Favicon_180x180.png" sizes="180x180" type="image/png">
-  <link rel="icon" href="images/DeepProfessional_Favicon_32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="images/DeepProfessional_Favicon_16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
-  <link rel="mask-icon" href="images/DeepProfessional_Favicon_180x180.png" type="image/png" color="#712cf9">
-  <link rel="icon" href="images/DeepProfessional_Favicon_32x32.png" type="image/png">
-  <meta name="theme-color" content="#712cf9">
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Deeptaanshu Kumar">
+    <meta property="og:title" content="Deeptaanshu Kumar – Data Engineering & AI / ML Leader">
+    <meta property="og:description" content="Portfolio of my Data and AI / ML experience">
+    <meta property="og:url" content="https://www.deeptaanshu.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/Deeptaanshu_Professional_Headshot.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-  <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@DeeptaanshuK">
+    <meta name="twitter:title" content="Deeptaanshu Kumar - Data Engineering & AI / ML Leader">
+    <meta name="twitter:description" content="Data and AI / ML portfolio">
+    <meta name="twitter:image" content="images/Deeptaanshu_Professional_Headshot.png">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+    <!-- Performance Hints -->
+    <link rel="preload" href="assets/dist/css/bootstrap.min.css" as="style">
+    <!-- Bootstrap 5.3.6 -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Favicons & theme -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Deeptaanshu_Professional_Headshot.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Deeptaanshu_Professional_Headshot.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Deeptaanshu_Professional_Headshot.png">
+    <link rel="mask-icon" href="images/Deeptaanshu_Professional_Headshot.png" type="image/png" color="#712cf9">
+    <link rel="manifest" href="assets/dist/manifest.json">
+    <meta name="theme-color" content="#712cf9">
+
+    <!--!&#45;&#45; JS: Bootstrap, ImagesLoaded, Isotope &ndash;&gt;-->
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/dist/js/isotope.pkgd.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Deeptaanshu Kumar",
+            "jobTitle": "VP of Data Engineering",
+            "url": "https://www.deeptaanshu.com/",
+            "sameAs": [
+                "https://www.linkedin.com/in/deeptaanshu",
+                "https://scholar.google.com/citations?user=KRHMRKEAAAAJ&hl=en&oi=ao",
+                "https://github.com/deeptaanshu",
+                "https://x.com/DeeptaanshuK"
+            ]
         }
-      }
+    </script>
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+          const grid=document.querySelector('.isotope-container');
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+          imagesLoaded(grid,()=>{
+            const iso=new Isotope(grid,{
+              itemSelector:'.isotope-item',
+              layoutMode  :'fitRows',
+              transitionDuration:'0.6s',
+              hiddenStyle :{opacity:0},
+              visibleStyle:{opacity:1}
+            });
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+            document.querySelectorAll('.portfolio-filters li').forEach(btn=>{
+              btn.addEventListener('click',function(){
+                document.querySelector('.filter-active')?.classList.remove('filter-active');
+                this.classList.add('filter-active');
+                iso.arrange({filter:this.dataset.filter});
+              });
+            });
+          });
+        });
+    </script>
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    <style>
+        /* === single fade-in on filter/resize === */
+        .isotope-item   {padding:1rem;transition:opacity .6s ease;}
+        .isotope-hidden {opacity:0!important;transition:none!important;}
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        /* === card hover, lift & link cues === */
+        .portfolio-content{
+          overflow:hidden;
+          transition:box-shadow .25s ease,transform .25s ease;
+        }
+        .portfolio-content img{
+          border:1px solid #000;   /* swap 1px→2px or solid→dashed as needed */
+        }
+        .portfolio-content:hover,
+        .portfolio-content:focus-within{
+          box-shadow:0 1rem 2rem rgba(0,0,0,.45);
+          transform:translateY(-6px) scale(1.04);
+        }
+        .portfolio-content a{position:relative;display:block;cursor:pointer;}
 
-       .card {
-        height: 100%;
-        display: flex;
-      }
+        /* link icon */
+        .portfolio-content a::after{
+          content:"🔗";
+          position:absolute;top:.5rem;right:.5rem;
+          background:rgba(0,0,0,.6);color:#fff;font-size:1.15rem;line-height:1;
+          padding:.15rem .35rem;border-radius:.25rem;
+          opacity:0;transition:opacity .25s ease;
+        }
+        .portfolio-content a:hover::after,
+        .portfolio-content a:focus-visible::after{opacity:1;}
 
-      .card-block {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column;
-      }
+        /* === perfectly centred overlay text (transform) === */
+        .overlay-text{
+          position:absolute;top:0;right:0;bottom:0;left:0;      /* cover whole image  */
+          display:flex;align-items:center;justify-content:center;/* centre both axes  */
+          background:rgba(0,0,0,.55);
+          color:#fff;font-weight:600;font-size:1rem;text-shadow:0 1px 2px #000;
+          opacity:0;transition:opacity .25s ease;
+          pointer-events:none;text-align:center;                 /* never blocks click */
+        }
+        .portfolio-content a:hover .overlay-text,
+        .portfolio-content a:focus-visible .overlay-text{opacity:1;}
 
-      .card.card-footer {
-          align-self: flex-end;
-          flex: 1 1 auto;
-      }
+        /* filter buttons */
+        .portfolio-filters li{cursor:pointer;display:inline-block;margin:.25rem .5rem;padding:.25rem .75rem}
+        .filter-active{background:#0d6efd;color:#fff}
     </style>
 </head>
 <body>
+<main>
+    <section class="py-5">
+        <div class="container">
+            <!-- heading + filters -->
+            <div class="row mb-4 align-items-center">
+                <div class="col-lg-7">
+                    <h3 class="mb-1">Hi, I'm Deeptaanshu Kumar</h3>
+                    <!-- NEW background paragraph -->
+                    <p class="lead mb-3">
+                        <strong><u>Summary</u></strong>: I’m an Engineering Executive with over a decade of
+                        experience building petabyte-scale real-time streaming data platforms that have served
+                        many AI/ML use cases and have processed 50k+ requests per second for 130M+ global users<br>
+                        <strong><u>Profession</u></strong>: VP of Data Engineering @ The Arena Group (NYSE: AREN)<br>
+                        <strong><u>Education</u></strong>: MBA @ Wharton (UPenn), MS in CS (AI) @ Georgia Tech,
+                        and BS + MS in ECE @ Carnegie Mellon
+                    </p>
+                </div>
+                <div class="col-lg-5 text-lg-end">
+                    <ul class="portfolio-filters list-unstyled mb-0">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-portfolio">Portfolio</li>
+                        <li data-filter=".filter-education">Education</li>
+                        <li data-filter=".filter-recent-updates">Recent Updates</li>
+                    </ul>
+                </div>
+            </div>
 
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About Me</h4>
-          <p class="text-muted">I am the VP of Data Engineering in The Arena Group's Enterprise Data & AI team and specialize in implementing streaming data platforms and AI/ML use cases!</p>
+            <!-- 4-column grid -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 isotope-container">
+                <!-- row 1 -->
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://www.linkedin.com/in/deeptaanshu"
+                                                      target="_blank"><img
+                            src="images/LinkedIn_Logo.png" alt="Deeptaanshu_Kumar_LinkedIn" class="img-fluid"><span
+                            class="overlay-text">My ~30k LinkedIn connections include leaders in the field of AI / ML</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-education">
+                    <div class="portfolio-content"><a href="https://mba.wharton.upenn.edu/" target="_blank"><img
+                            src="images/Wharton_Logo.png" alt="Deeptaanshu_Kumar_Wharton_MBA"
+                            class="img-fluid"><span
+                            class="overlay-text">MBA (Triple-Major):<br>Business Analytics,<br>Marketing & Operations Management,<br>and Entrepreneurship & Innovation</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-education">
+                    <div class="portfolio-content"><a
+                            href="https://www.cc.gatech.edu/degree-programs/master-science-computer-science"
+                            target="_blank"><img
+                            src="images/Georgia_Tech_Logo.png" alt="Deeptaanshu_Kumar_MS_CS_AI_Georgia_Tech"
+                            class="img-fluid"><span
+                            class="overlay-text">MS (with Specialization):<br>Computer Science<br>(Artificial Intelligence)</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-education">
+                    <div class="portfolio-content"><a href="https://www.ece.cmu.edu/" target="_blank"><img
+                            src="images/Carnegie_Mellon_Logo.png"
+                            alt="Deeptaanshu_Kumar_BS_And_MS_ECE_Carnegie_Mellon" class="img-fluid"><span
+                            class="overlay-text">BS + MS:<br>Electrical and<br>Computer Engineering</span></a>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a
+                            href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ"
+                            target="_blank"><img
+                            src="images/Google_Scholar_Logo.png" alt="Deeptaanshu_Kumar_Google_Scholar"
+                            class="img-fluid"><span
+                            class="overlay-text">My patents and publications on topics such as Big Data and AI / ML</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://github.com/deeptaanshu"
+                                                      target="_blank"><img
+                            src="images/GitHub_Logo.png" alt="Deeptaanshu_Kumar_GitHub"
+                            class="img-fluid"><span
+                            class="overlay-text">My Data & AI-related projects and open-source work</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://www.quora.com/profile/Deeptaanshu-Kumar"
+                                                      target="_blank"><img
+                            src="images/Quora_Logo.png" alt="Deeptaanshu_Kumar_Quora"
+                            class="img-fluid"><span
+                            class="overlay-text">My answers to frequently-asked questions about<br>professional certifications, school/academics, etc.</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://deeptaanshu.medium.com/"
+                                                      target="_blank"><img
+                            src="images/Medium_Logo.png" alt="Deeptaanshu_Kumar_Medium"
+                            class="img-fluid"><span
+                            class="overlay-text">My articles on technology topics such as Cloud certifications and deploying WebApps on AWS</span></a>
+                    </div>
+                </div>
+                <!-- row 3 -->
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://x.com/DeeptaanshuK"
+                                                      target="_blank"><img
+                            src="images/X_Logo.png" alt="Deeptaanshu_Kumar_X_Twitter"
+                            class="img-fluid"><span
+                            class="overlay-text">My tweets about Tech & AI</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://wellfound.com/u/deeptaanshu"
+                                                      target="_blank"><img
+                            src="images/Wellfound_Logo.png" alt="Deeptaanshu_Kumar_Wellfound"
+                            class="img-fluid"><span
+                            class="overlay-text">My experience in scaling Data teams and building enterprise data platforms</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://dblp.org/pid/307/3594.html"
+                                                      target="_blank"><img
+                            src="images/DBLP_Logo.png" alt="Deeptaanshu_Kumar_DBLP"
+                            class="img-fluid"><span
+                            class="overlay-text">My Computer Science-related research papers on dblp's CS bibliography</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-portfolio">
+                    <div class="portfolio-content"><a href="https://deepai.org/profile/deeptaanshu-kumar"
+                                                      target="_blank"><img
+                            src="images/DeepAI_Logo.png" alt="Deeptaanshu_Kumar_DeepAI"
+                            class="img-fluid"><span
+                            class="overlay-text">My research papers and frequent collaborators</span></a>
+                    </div>
+                </div>
+                <!-- row 4 -->
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://adswerve.com/results/the-arena-group"
+                                                      target="_blank"><img
+                            src="images/Adswerve_Logo.png" alt="Deeptaanshu_Kumar_Adswerve"
+                            class="img-fluid"><span
+                            class="overlay-text">Case study by Adswerve that highlights my Data Engineering work</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://www.tryexponent.com/courses/data-engineering"
+                                                      target="_blank"><img
+                            src="images/Exponent_Logo.png" alt="Deeptaanshu_Kumar_Exponent_Course"
+                            class="img-fluid"><span
+                            class="overlay-text">Data Engineering interview prep course that I co-designed with Exponent</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://www.tryexponent.com/blog/data-engineering-interview"
+                                                      target="_blank"><img
+                            src="images/Exponent_Logo.png" alt="Deeptaanshu_Kumar_Exponent_Blog"
+                            class="img-fluid"><span
+                            class="overlay-text">Data Engineering interview guide that I reviewed and edited for Exponent</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://poetsandquants.com/2023/09/19/chicago-booth-returns-to-top-of-pqs-2023-executive-mba-ranking/2/"
+                            target="_blank"><img
+                            src="images/PoetsAndQuants_Logo.png" alt="Deeptaanshu_Kumar_Poets_And_Quants"
+                            class="img-fluid"><span
+                            class="overlay-text">Poets & Quants wrote an article about my role in Wharton's MBA program</span></a>
+                    </div>
+                </div>
+                <!-- row 5 -->
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://dsg.csail.mit.edu/publications/"
+                                                      target="_blank"><img
+                            src="images/MIT_Logo.png" alt="Deeptaanshu_Kumar_MIT_CSAIL"
+                            class="img-fluid"><span
+                            class="overlay-text">MIT CSAIL's list of publications, which includes my publications with several MIT professors</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://faculty.wharton.upenn.edu/wp-content/uploads/2017/08/JacquelineKirtley_CV_05012025.pdf"
+                            target="_blank"><img
+                            src="images/Wharton_Logo.png" alt="Deeptaanshu_Kumar_Wharton_Research"
+                            class="img-fluid"><span
+                            class="overlay-text">Wharton Professor Jacqueline Kirtley served as my Advisor for my MBA research project</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://www.montgomerycountymd.gov/boards/sites/cerb/index.html"
+                            target="_blank"><img
+                            src="images/CERB_Logo.png" alt="Deeptaanshu_Kumar_CERB"
+                            class="img-fluid"><span
+                            class="overlay-text">I serve on the Montgomery County, MD Committee Evaluation and Review Board (CERB)</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://montgomerycountymd.granicus.com/MetaViewer.php?view_id=169&clip_id=17408&meta_id=180289"
+                            target="_blank"><img
+                            src="images/CERB_Logo.png" alt="Deeptaanshu_Kumar_CERB_Nomination"
+                            class="img-fluid"><span
+                            class="overlay-text">My official CERB selection notice from the Montgomery County, MD County Executive Office</span></a>
+                    </div>
+                </div>
+                <!-- row 6 -->
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://dbos-project.github.io/"
+                                                      target="_blank"><img
+                            src="images/Stanford_Logo.png" alt="Deeptaanshu_Kumar_DBOS"
+                            class="img-fluid"><span
+                            class="overlay-text">I was a contributor to DBOS, which was a CMU-MIT-Stanford collaboration</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="http://dsaa2022.dsaa.co/posters/"
+                            target="_blank"><img
+                            src="images/DSAA_Logo.png" alt="Deeptaanshu_Kumar_DSAA_2022"
+                            class="img-fluid"><span
+                            class="overlay-text">My Big Data presentation at the IEEE Data Science and Advanced Analytics (DSAA) conference</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://ieee-hpec.org/2022/ieee-hpec.org/index.php/ieee-hpec-2022-prelim-agenda/index.html"
+                            target="_blank"><img
+                            src="images/HPEC_Logo.png" alt="Deeptaanshu_Kumar_HPEC_2022"
+                            class="img-fluid"><span
+                            class="overlay-text">My Distributed Systems session at IEEE's High Performance Extreme Computing (HPEC) conference</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://astesj.com/wp-content/uploads/Contents/V7_N4/TC.pdf"
+                            target="_blank"><img
+                            src="images/ASTESJ_Logo.png" alt="Deeptaanshu_Kumar_ASTESJ_2022"
+                            class="img-fluid"><span
+                            class="overlay-text">One of my AI-related research papers was published in Volume 7 (Issue 4) of the ASTESJ journal</span></a>
+                    </div>
+                </div>
+                <!-- row 7 -->
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://vldb.org/cidrdb/2022/index.html"
+                                                      target="_blank"><img
+                            src="images/CIDR_Logo.png" alt="Deeptaanshu_Kumar_VLDB_CIDR_2022"
+                            class="img-fluid"><span
+                            class="overlay-text">This presentation covered the updates on my DBOS project at VLDB's CIDR conference</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="https://sites.google.com/view/aidb2022/home/accepted-papers"
+                            target="_blank"><img
+                            src="images/AIDB_Logo.png" alt="Deeptaanshu_Kumar_VLDB_AIDB_2022"
+                            class="img-fluid"><span
+                            class="overlay-text">This presentation included an overview of DBOS' ML capabilities at VLDB's AIDB workshop</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a href="https://sites.google.com/view/poly21/program"
+                                                      target="_blank"><img
+                            src="images/Poly_Logo.png" alt="Deeptaanshu_Kumar_VLDB_Poly_2021"
+                            class="img-fluid"><span
+                            class="overlay-text">This presentation showed DBOS' Data Governance features at VLDB's Poly workshop</span></a>
+                    </div>
+                </div>
+                <div class="col isotope-item filter-recent-updates">
+                    <div class="portfolio-content"><a
+                            href="http://www.wimob.org/wimob2021/programme.html"
+                            target="_blank"><img
+                            src="images/WiMob_Logo.png" alt="Deeptaanshu_Kumar_WiMob_2021"
+                            class="img-fluid"><span
+                            class="overlay-text">This presentation analyzed the effectiveness of my patented sobriety-detection AI model</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Navigate</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://www.deeptaanshu.com/" class="text-white">Home</a></li>
-            <li><a href="#portfolio" class="text-white">Portfolio</a></li>
-            <li><a href="#contactMe" class="text-white">Contact Me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="https://www.deeptaanshu.com" class="navbar-brand d-flex align-items-center">
-        <strong>Deeptaanshu Kumar</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main class="overflow-scroll">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" style="text-align: center;">
-        <img class="bd-placeholder-img" width="80%" height="100%" src="images/Professional.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-      </div>
-      <div class="carousel-item" style="text-align: center;">
-        <img class="bd-placeholder-img" width="80%" height="100%" src="images/College.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-      </div>
-      <div class="carousel-item" style="text-align: center;">
-        <img class="bd-placeholder-img" width="80%" height="100%" src="images/Hobbies.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" style="background-image: url(images/Left_Arrow.svg);}" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" style="background-image: url(images/Right_Arrow.svg);}" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="album py-0 bg-light" id="portfolio">
-    <div class="container">
-      <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
-        <h1 class="fw-bold mb-0 fs-2">Portfolio</h1>
-      </div>
-      <div class="modal-body p-5 pt-0">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/LinkedIn_Logo.png" role="img" aria-label="Placeholder: LinkedIn Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>LinkedIn</title></img>
-              <div class="card-body">
-                <p class="card-text">Connect with me on LinkedIn to learn about new technology trends/tools and join my discussions with industry leaders in Big Data and AI/ML!</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://www.linkedin.com/in/deeptaanshu" class="btn btn-primary" target="_blank">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/GoogleScholar_Logo.png" role="img" aria-label="Placeholder: Google Scholar Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Google Scholar</title></img>
-              <div class="card-body">
-                <p class="card-text">View my profile on Google Scholar to see my patents and publications on topics such as Big Data, Distributed Computing, and Databases.</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://scholar.google.com/citations?hl=en&user=KRHMRKEAAAAJ" class="btn btn-primary" target="_blank">Google Scholar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/GitHub_Logo.png" role="img" aria-label="Placeholder: GitHub Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>GitHub</title></img>
-              <div class="card-body">
-                <p class="card-text">Collaborate with me on GitHub and view my data/software engineering side-projects, open-source work, and course-related activities!</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://github.com/deeptaanshu" class="btn btn-primary" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/Quora_Logo.png" role="img" aria-label="Placeholder: Quora Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Quora</title></img>
-              <div class="card-body">
-                <p class="card-text">Join me on Quora to read my answers to frequently-asked questions about professional certifications, school/academics, etc.</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://www.quora.com/profile/Deeptaanshu-Kumar" class="btn btn-primary" target="_blank">Quora</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/Medium_Logo.png" role="img" aria-label="Placeholder: Medium Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Medium</title></img>
-              <div class="card-body">
-                <p class="card-text">Follow me on Medium to read my articles on technology topics, such as Cloud certifications and deploying WebApps on AWS.</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://deeptaanshu.medium.com/" class="btn btn-primary" target="_blank">Medium</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top w-50 mx-auto pt-3" src="images/AngelList_Logo.png" role="img" aria-label="Placeholder: AngelList Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AngelList</title></img>
-              <div class="card-body">
-                <p class="card-text">Contact me on AngelList to learn more about my experience in scaling Data teams and implementing enterprise data platforms!</p>
-              </div>
-              <div class="card-footer justify-content-between align-items-center text-center">
-                <a href="https://wellfound.com/u/deeptaanshu" class="btn btn-primary" target="_blank">AngelList</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="modal modal-signin position-static d-block bg-dark py-5" tabindex="-1"  id="contactMe">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content rounded-3 shadow">
-        <div class="modal-header p-5 pb-4 border-bottom-0 justify-content-center">
-          <h1 class="fw-bold mb-0 fs-2">Contact Me</h1>
-        </div>
-
-        <div class="modal-body p-5 pt-0">
-          <form class="" action="https://formspree.io/f/mqkgggna" method="POST">
-            <div class="form-floating mb-3">
-              <input type="input" class="form-control rounded-3" id="floatingInputName" placeholder="Full Name" required>
-              <label for="floatingInputName">Full Name</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control rounded-3" id="floatingInputEmail" placeholder="name@example.com" required>
-              <label for="floatingInputEmail">Email Address</label>
-            </div>
-            <div class="form-outline mb-3">
-              <textarea type="text" class="form-control rounded-3" placeholder="Message" rows="7" required></textarea>
-            </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
 </main>
-
-<footer class="text-muted py-3">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Copyright ©2020 Deeptaanshu Kumar</p>
-  </div>
+<!-- Footer -->
+<footer class="text-muted bg-light py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-1">©2020 Deeptaanshu Kumar</p>
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
 </footer>
-
 </body>
 </html>

@@ -1,0 +1,7 @@
+# robots.txt — full-access edition (2025-06-22)
+# Allows ALL crawlers to fetch ANY URL on this host.
+
+User-agent: *
+Allow: /          # give explicit permission for the entire site
+
+# (No Disallow lines)
